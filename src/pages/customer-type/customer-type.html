@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{'Create an Account'|translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-12 class="box-wrapper" #box1 (click)="next('buy')">
+      <div class="aa">لشراء السلع</div>
+      <img src="assets/imgs/buy.png" class="bu-img">
+      <div class="my-wrapper">
+        <div>التسجيل مجاني والزامي</div>
+        <div>لتتمكن من شراء السلع المختلفة لدينا</div>
+      </div>
+    </ion-col>
+
+    <ion-col col-12 class="box-wrapper2" #box2 (click)="next('sell')">
+      <div class="aa">لبيع السلع</div>
+      <img src="assets/imgs/sell.png" class="bu-img">
+      <div class="my-wrapper">
+        <div>اذا كان لديك سلعة معينة</div>
+        <div>وتريد ان نسوقها لك برجاء الدخول هنا</div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
